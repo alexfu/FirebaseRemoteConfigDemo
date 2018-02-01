@@ -37,13 +37,20 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.fetch) {
-            // For demo purposes only!
-            // Normally, we would fetch the values from Firebase and then call activateFetched
-            // next time the app starts to avoid changing content while user is using the app.
-            remoteConfig.fetch(0)
+            // If the data in the cache was fetched no longer than this many seconds ago,
+            // this method will return the cached data. If not, a fetch from the Remote Config
+            // Server will be attempted.
+            val cacheExpirationSeconds: Long = 0
+
+            remoteConfig.fetch(cacheExpirationSeconds)
                     .addOnSuccessListener {
                         Toast.makeText(this@MainActivity, "Fetch succeeded!", Toast.LENGTH_LONG).show()
+
+                        // Call activateFetched when you want to apply new values.
+                        // Normally, we would fetch the values from Firebase and then call activateFetched
+                        // next time the app starts to avoid changing content while user is using the app.
                         remoteConfig.activateFetched()
+
                         reloadUI()
                     }
                     .addOnFailureListener { exception ->
