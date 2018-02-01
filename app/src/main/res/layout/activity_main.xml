@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.alexfu.firebaseremoteconfigdemo.MainActivity">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            tools:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/text_sample"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            tools:text="Donizzle posuere auctor crackalackin. Phasellizzle dang elizzle izzle own yo' fo that's the shizzle. Black a fo shizzle my nizzle. Vestibulizzle dizzle lacus tellivizzle mauris get down get down da bomb. Shiznit at get down get down sizzle amet eros ultricizzle the bizzle. Mammasay mammasa mamma oo sa velit tortor, ultricies at, hendrerit quis, adipiscing quis, things. Etiam velizzle go to hizzle, shizzle my nizzle crocodizzle consequizzle, pharetra non, shiznit things, fizzle. Dawg neque. Cras lorizzle. Sizzle vitae erizzle ut dang the bizzle mammasay mammasa mamma oo sa. Fusce i saw beyonces tizzles and my pizzle went crizzle augue stuff nibh break yo neck, yall mattizzle. Phasellus ass sapizzle nizzle erat. Suspendisse lorem leo, i'm in the shizzle sizzle, fo shizzle mah nizzle fo rizzle, mah home g-dizzle check it out, commodo crazy, yo. Donizzle rizzle porttitizzle ligula. Nunc feugiat, gangsta ornare i saw beyonces tizzles and my pizzle went crizzle, break it down crazy tincidunt ante, eget fizzle nizzle enim izzle yo mamma. Phasellus owned fo shizzle, imperdiet izzle, fo shizzle izzle, semper izzle, fo shizzle my nizzle. Ut dope magna go to hizzle yo. Shizzle my nizzle crocodizzle ante fo shizzle my nizzle, pot vitae, yo et, shiznit brizzle, velit. Maurizzle shizzlin dizzle i'm in the shizzle. Sizzle nizzle ghetto shizzle my nizzle crocodizzle amet risus iaculis congue." />
+
+    </LinearLayout>
+
+</ScrollView>
